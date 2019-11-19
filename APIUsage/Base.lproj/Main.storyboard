@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="APIUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="HAl-3w-34y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fRq-c8-e6V">
+                                        <rect key="frame" x="76" y="0.0" width="262.33333333333331" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyumen, Russian Federation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-Ok-0Va">
+                                                <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-yV-d8x">
+                                        <rect key="frame" x="190.33333333333334" y="120.99999999999999" width="33.333333333333343" height="33.333333333333329"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunday" translatesAutoresizingMaskIntoConstraints="NO" id="Pja-4B-g6h">
+                                                <rect key="frame" x="0.0" y="0.0" width="33.333333333333336" height="33.333333333333336"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="108" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-Pm-Q0j">
+                                        <rect key="frame" x="82.666666666666686" y="235.33333333333331" width="248.66666666666663" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="770 mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zW-84-S8W">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wot-C4-Ohi">
+                                                <rect key="frame" x="193.33333333333331" y="0.0" width="55.333333333333343" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HWm-4K-PS3">
+                                        <rect key="frame" x="151.66666666666666" y="356.33333333333331" width="110.66666666666666" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34ºC" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="nKW-SR-s6m">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="70"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-iJ-gaf">
+                                        <rect key="frame" x="122.33333333333331" y="507.33333333333337" width="169.33333333333337" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощутимо: 34ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-vd-4ho">
+                                                <rect key="frame" x="0.0" y="0.0" width="169.33333333333334" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Etz-s7-mg4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-ak-lpB">
+                                        <rect key="frame" x="130.66666666666666" y="628.33333333333337" width="152.99999999999997" height="189.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-ck-yEZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="189.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="VOJ-YO-aIy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Обновить"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" spacing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAl-3w-34y" secondAttribute="trailing" id="5ko-nK-2iw"/>
+                            <constraint firstItem="HAl-3w-34y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FV9-ou-8yt"/>
+                            <constraint firstAttribute="bottom" secondItem="HAl-3w-34y" secondAttribute="bottom" id="Mzf-eD-TrA"/>
+                            <constraint firstItem="HAl-3w-34y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O0H-eP-Iq8"/>
+                            <constraint firstItem="HAl-3w-34y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="doC-PN-gdC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAl-3w-34y" secondAttribute="trailing" id="h6H-cY-b63"/>
+                            <constraint firstItem="HAl-3w-34y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k6N-lo-t7P"/>
+                            <constraint firstItem="HAl-3w-34y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lj4-cd-GQ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAl-3w-34y" secondAttribute="trailing" id="p37-zT-Q8Z"/>
+                            <constraint firstItem="HAl-3w-34y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tUs-jM-wao"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HAl-3w-34y" secondAttribute="bottom" id="v7G-lw-smx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HAl-3w-34y" secondAttribute="bottom" id="waA-9d-jxE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5ko-nK-2iw"/>
+                                <exclude reference="p37-zT-Q8Z"/>
+                                <exclude reference="waA-9d-jxE"/>
+                                <exclude reference="FV9-ou-8yt"/>
+                                <exclude reference="Mzf-eD-TrA"/>
+                                <exclude reference="O0H-eP-Iq8"/>
+                                <exclude reference="k6N-lo-t7P"/>
+                                <exclude reference="lj4-cd-GQ1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="h6H-cY-b63"/>
+                                <include reference="p37-zT-Q8Z"/>
+                                <exclude reference="v7G-lw-smx"/>
+                                <include reference="Mzf-eD-TrA"/>
+                                <exclude reference="doC-PN-gdC"/>
+                                <include reference="k6N-lo-t7P"/>
+                                <include reference="lj4-cd-GQ1"/>
+                                <exclude reference="tUs-jM-wao"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5ko-nK-2iw"/>
+                                <exclude reference="h6H-cY-b63"/>
+                                <exclude reference="v7G-lw-smx"/>
+                                <include reference="waA-9d-jxE"/>
+                                <include reference="FV9-ou-8yt"/>
+                                <include reference="O0H-eP-Iq8"/>
+                                <exclude reference="doC-PN-gdC"/>
+                                <exclude reference="tUs-jM-wao"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.60714285714286" y="107.24637681159422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunday" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>
