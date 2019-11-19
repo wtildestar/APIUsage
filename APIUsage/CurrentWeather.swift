@@ -13,6 +13,23 @@ struct CurrentWeather {
     let temperature: Double
     let appearentTemperature: Double
     let humidity: Double
-    let plessure: Double
+    let pressure: Double
     let icon: UIImage
+}
+
+extension CurrentWeather {
+    var pressureString: String {
+        return "\(Int(pressure)) mm"
+    }
+    
+    var humidityString: String {
+        return "\(Int(humidity)) %"
+    }
+    
+    var temperatureString: String {
+       return "\(Int(temperature))ºC"
+   }
+    var appearentTemperatureString: String {
+        return "\(Int(appearentTemperature))ºC"
+    }
 }
