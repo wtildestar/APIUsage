@@ -15,176 +15,164 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HAl-3w-34y">
-                                <rect key="frame" x="0.0" y="30" width="320" height="440"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyd-GE-PaA" customClass="ParticlesView" customModule="APIUsage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fRq-c8-e6V">
-                                        <rect key="frame" x="29" y="0.0" width="262.5" height="41.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HAl-3w-34y">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyumen, Russian Federation" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-Ok-0Va">
-                                                <rect key="frame" x="0.0" y="0.0" width="262.5" height="41.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fRq-c8-e6V">
+                                                <rect key="frame" x="29" y="0.0" width="262.5" height="36.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyumen, Russian Federation" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-Ok-0Va">
+                                                        <rect key="frame" x="0.0" y="0.0" width="262.5" height="36.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="r2S-fJ-Fux">
+                                                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13" id="wGE-Qa-6FM">
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="r2S-fJ-Fux"/>
+                                                                <exclude reference="wGE-Qa-6FM"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                            <mask key="constraints">
+                                                                <include reference="wGE-Qa-6FM"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <mask key="constraints">
+                                                                <include reference="r2S-fJ-Fux"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lN-5H-rlq">
+                                                <rect key="frame" x="40" y="44.5" width="240" height="58.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-yV-d8x">
+                                                <rect key="frame" x="110" y="111" width="100" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="Pja-4B-g6h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3IF-BS-9Xz">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="xkb-4Q-W2M">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="108" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-Pm-Q0j">
+                                                <rect key="frame" x="22" y="219" width="276" height="110"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="770 mm" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7zW-84-S8W">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="WKn-mx-4aN">
+                                                        <rect key="frame" x="128" y="0.0" width="20" height="110"/>
+                                                    </activityIndicatorView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wot-C4-Ohi">
+                                                        <rect key="frame" x="256" y="0.0" width="20" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="r2S-fJ-Fux">
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="syL-yG-I6c">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="30"/>
                                                         <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                                                     </constraint>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13" id="wGE-Qa-6FM">
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="30"/>
-                                                    </constraint>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="r2S-fJ-Fux"/>
-                                                        <exclude reference="wGE-Qa-6FM"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="wGE-Qa-6FM"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="r2S-fJ-Fux"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HWm-4K-PS3">
+                                                <rect key="frame" x="105" y="337" width="110.5" height="57"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34ºC" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nKW-SR-s6m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110.5" height="57"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="MtZ-4c-LYH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="60"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-iJ-gaf">
+                                                <rect key="frame" x="75.5" y="402" width="169.5" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощутимо: 34ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-vd-4ho">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Etz-s7-mg4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-ak-lpB">
+                                                <rect key="frame" x="83.5" y="440" width="153" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-ck-yEZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="VOJ-YO-aIy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Обновить"/>
+                                                        <connections>
+                                                            <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6H7-Nt-itb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-yV-d8x">
-                                        <rect key="frame" x="110" y="51.5" width="100" height="104.5"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="Pja-4B-g6h">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="104.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3IF-BS-9Xz">
-                                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
-                                                        <variation key="heightClass=regular-widthClass=compact" constant="100"/>
-                                                    </constraint>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="xkb-4Q-W2M">
-                                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
-                                                        <variation key="heightClass=regular-widthClass=compact" constant="100"/>
-                                                    </constraint>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="108" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-Pm-Q0j">
-                                        <rect key="frame" x="22" y="166" width="276" height="83.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="770 mm" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7zW-84-S8W">
-                                                <rect key="frame" x="0.0" y="0.0" width="20" height="83.5"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="WKn-mx-4aN">
-                                                <rect key="frame" x="128" y="0.0" width="20" height="83.5"/>
-                                            </activityIndicatorView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wot-C4-Ohi">
-                                                <rect key="frame" x="256" y="0.0" width="20" height="83.5"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="syL-yG-I6c">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
-                                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
-                                            </constraint>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HWm-4K-PS3">
-                                        <rect key="frame" x="105" y="259.5" width="110.5" height="73"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34ºC" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nKW-SR-s6m">
-                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="73"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="MtZ-4c-LYH"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="60"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-iJ-gaf">
-                                        <rect key="frame" x="75.5" y="342.5" width="169.5" height="41.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощутимо: 34ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-vd-4ho">
-                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="41.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Etz-s7-mg4"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-ak-lpB">
-                                        <rect key="frame" x="83.5" y="394" width="153" height="46"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-ck-yEZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="153" height="46"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="VOJ-YO-aIy"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Обновить"/>
-                                                <connections>
-                                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6H7-Nt-itb"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="16"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="8"/>
                                     </stackView>
                                 </subviews>
-                                <variation key="heightClass=compact-widthClass=compact" spacing="16"/>
-                                <variation key="heightClass=compact-widthClass=regular" spacing="8"/>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="HAl-3w-34y" firstAttribute="leading" secondItem="cyd-GE-PaA" secondAttribute="leading" id="HfY-oS-vII"/>
+                                    <constraint firstItem="HAl-3w-34y" firstAttribute="top" secondItem="cyd-GE-PaA" secondAttribute="top" id="MBV-ZE-xtp"/>
+                                    <constraint firstAttribute="bottom" secondItem="HAl-3w-34y" secondAttribute="bottom" id="PVP-jL-G0H"/>
+                                    <constraint firstAttribute="trailing" secondItem="HAl-3w-34y" secondAttribute="trailing" id="oWr-vs-bLN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HAl-3w-34y" secondAttribute="bottom" constant="30" id="8Cl-KX-Vzb">
-                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
-                            </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAl-3w-34y" secondAttribute="trailing" id="BDO-6k-n35"/>
-                            <constraint firstItem="HAl-3w-34y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F2e-pr-bNv"/>
-                            <constraint firstAttribute="bottom" secondItem="HAl-3w-34y" secondAttribute="bottom" constant="10" id="Qvj-0d-Yh7"/>
-                            <constraint firstItem="HAl-3w-34y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="R0m-DA-o5f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAl-3w-34y" secondAttribute="trailing" id="Xfq-Tk-iVg"/>
-                            <constraint firstItem="HAl-3w-34y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dnd-bR-Fhy"/>
-                            <constraint firstItem="HAl-3w-34y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kFf-df-XZN"/>
+                            <constraint firstItem="cyd-GE-PaA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E6z-dv-aG3"/>
+                            <constraint firstItem="cyd-GE-PaA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fEK-Ao-sjr"/>
+                            <constraint firstItem="cyd-GE-PaA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gVw-cw-RsD"/>
+                            <constraint firstItem="cyd-GE-PaA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tjy-QQ-NUI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Xfq-Tk-iVg"/>
-                                <exclude reference="Qvj-0d-Yh7"/>
-                                <exclude reference="R0m-DA-o5f"/>
-                                <exclude reference="kFf-df-XZN"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <exclude reference="8Cl-KX-Vzb"/>
-                                <exclude reference="BDO-6k-n35"/>
-                                <include reference="Xfq-Tk-iVg"/>
-                                <exclude reference="F2e-pr-bNv"/>
-                                <include reference="Qvj-0d-Yh7"/>
-                                <include reference="R0m-DA-o5f"/>
-                                <exclude reference="dnd-bR-Fhy"/>
-                                <include reference="kFf-df-XZN"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="WKn-mx-4aN" id="nsZ-uk-YgT"/>
